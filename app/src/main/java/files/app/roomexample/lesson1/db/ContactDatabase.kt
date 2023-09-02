@@ -1,4 +1,4 @@
-package files.app.roomexample.db
+package files.app.roomexample.lesson1.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

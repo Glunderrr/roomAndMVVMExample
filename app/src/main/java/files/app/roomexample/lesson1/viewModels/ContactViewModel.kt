@@ -1,12 +1,13 @@
-package files.app.roomexample.viewModels
+package files.app.roomexample.lesson1.viewModels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import files.app.roomexample.db.Contact
-import files.app.roomexample.db.ContactDao
-import files.app.roomexample.parameters.ContactEvent
-import files.app.roomexample.parameters.ContactState
-import files.app.roomexample.parameters.SortType
+import files.app.roomexample.lesson1.db.Contact
+import files.app.roomexample.lesson1.db.ContactDao
+import files.app.roomexample.lesson1.parameters.ContactEvent
+import files.app.roomexample.lesson1.parameters.ContactState
+import files.app.roomexample.lesson1.parameters.SortType
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.combine
@@ -16,6 +17,7 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 
+@OptIn(ExperimentalCoroutinesApi::class)
 class ContactViewModel(
     private val dao: ContactDao
 ) : ViewModel() {
@@ -34,7 +36,6 @@ class ContactViewModel(
             sortType = sortType
         )
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), ContactState())
-
     fun onEvent(event: ContactEvent) {
         when (event) {
             is ContactEvent.DeleteContact -> {

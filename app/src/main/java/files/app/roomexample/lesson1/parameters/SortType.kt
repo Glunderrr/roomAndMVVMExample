@@ -1,4 +1,4 @@
-package files.app.roomexample.parameters
+package files.app.roomexample.lesson1.parameters
 
 enum class SortType {
     FIRST_NAME,

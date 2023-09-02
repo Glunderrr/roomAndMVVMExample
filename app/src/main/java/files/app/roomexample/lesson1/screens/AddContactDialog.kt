@@ -1,4 +1,4 @@
-package files.app.roomexample.screens
+package files.app.roomexample.lesson1.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -13,8 +13,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment.Companion.CenterEnd
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import files.app.roomexample.parameters.ContactEvent
-import files.app.roomexample.parameters.ContactState
+import files.app.roomexample.lesson1.parameters.ContactEvent
+import files.app.roomexample.lesson1.parameters.ContactState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

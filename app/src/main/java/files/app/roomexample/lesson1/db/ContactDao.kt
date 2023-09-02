@@ -1,4 +1,4 @@
-package files.app.roomexample.db
+package files.app.roomexample.lesson1.db
 
 import androidx.room.Dao
 import androidx.room.Delete

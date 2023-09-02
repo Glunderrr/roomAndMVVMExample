@@ -1,6 +1,6 @@
-package files.app.roomexample.parameters
+package files.app.roomexample.lesson1.parameters
 
-import files.app.roomexample.db.Contact
+import files.app.roomexample.lesson1.db.Contact
 
 data class ContactState(
     val contacts: List<Contact> = emptyList(),

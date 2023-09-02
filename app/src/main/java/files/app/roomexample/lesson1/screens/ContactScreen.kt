@@ -1,4 +1,4 @@
-package files.app.roomexample.screens
+package files.app.roomexample.lesson1.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
@@ -26,9 +26,9 @@ import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import files.app.roomexample.parameters.ContactEvent
-import files.app.roomexample.parameters.ContactState
-import files.app.roomexample.parameters.SortType
+import files.app.roomexample.lesson1.parameters.ContactEvent
+import files.app.roomexample.lesson1.parameters.ContactState
+import files.app.roomexample.lesson1.parameters.SortType
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
